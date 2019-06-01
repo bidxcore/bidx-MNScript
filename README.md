@@ -16,8 +16,9 @@ Suggested setup (not mandatory):
 
 **Depending upon which operating system you are using. Download the following software:
 
-Windows - PUTTY at <https://www.putty.org/>
-Mac/Linux - Terminal ( preinstalled ) - You can find terminal by following the steps: Go to finder, then click on utilities, then you'll find terminal there.
+a.) Windows - PUTTY at <https://www.putty.org/>
+or
+b.) Mac/Linux - Terminal ( preinstalled ) - You can find terminal by following the steps: Go to finder, then click on utilities, then you'll find terminal there.
 
 ## Second
 
@@ -30,6 +31,7 @@ b.) Copy your IP from the VPS - And for windows Putty simply put in the IP and p
 c.) It will connect to the server. Enter your user (root) and VPS password:
 
 >Username: root
+>
 >Password: (vultr password)
 
 ** Note that if you copy (control-c) and paste (right-click) into a putty session, there is NO FEEDBACK. That means you won't see the characters being typed or pasted in. So, if you do happen to copy and paste your password in there, just right-click and press [enter]
