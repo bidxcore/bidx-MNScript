@@ -6,11 +6,11 @@ a.) Choose your VPS
 
 Suggested setup (not mandatory):
 
-<https://www.vultr.com>
-$5 Basic plan
-Choose the location closest to you for best connection to your server.
-Ubuntu 16.04.x64
-Server (Give it a magical name)
+1. <https://www.vultr.com>
+2. $5 Basic plan
+3. Choose the location closest to you for best connection to your server.
+4. Ubuntu 16.04.x64
+5. Server (Give it a magical name)
 
 ### Start an SSH session
 
