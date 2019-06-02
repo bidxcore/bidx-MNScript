@@ -52,7 +52,7 @@ echo masternode=1 >> .bidx/bidx.conf
 echo masternodeprivkey=$masternodeprivkey >> .bidx/bidx.conf
 echo bind=$primaryip >> .bidx/bidx.conf
 echo externalip=$primaryip >> .bidx/bidx.conf
-echo masternodeaddr=$primaryip:24999 >> .bidx/bidx.conf
+echo masternodeaddr=$primaryip:40000 >> .bidx/bidx.conf
 
 # sleep because sleeping is good
 sleep 1
