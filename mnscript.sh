@@ -56,7 +56,7 @@ echo masternodeaddr=$primaryip:40000 >> .bidx/bidx.conf
 
 # sleep because sleeping is good
 sleep 1
-bidxd
+bidxd -daemon
 
 # finished
 echo Finished
