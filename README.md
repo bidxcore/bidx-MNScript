@@ -1,6 +1,11 @@
 # BIDX Masternode Setup Guide
 
 ## First
+1. Open the debug console of your wallet
+2. Enter command "masternode genkey"
+3. Open your notepad or word processor of choice and copy this genkey in there this is now your "mnprivkey"
+
+Now:
 
 a.) Choose your VPS
 
@@ -9,7 +14,7 @@ Suggested setup (not mandatory):
 1. <https://www.vultr.com>
 2. $5 Basic plan
 3. Choose the location closest to you for best connection to your server.
-4. Ubuntu 16.04.x64
+4. Ubuntu 18.04.x64 (This choice will process a bit faster in our experience)
 5. Server (Give it a magical name)
 
 ### Start an SSH session
@@ -48,15 +53,15 @@ Now:
 
 #### Once the script prints finished
 
-1. Open the debug console of your windows wallet
-2. Enter "getaccountaddress mn01" at the prompt
+1. Open the "Receive" tab of your wallet
+2. Click on the "Request payment" button and copy the new address generated
 3. Send (exactly) 7,000 BIDX to the address that is printed
 4. After 15 confirms, enter masternode outputs and note the transaction id (txid) of the transaction for collateral and output number (either 1 or 0)
 5. Open 'tools' menu in wallet
 6. Select 'open masternode configuration file'
 7. Create a new line at the bottom and enter details as follows:
 
-`mn01 ipaddressofvps:24999 masternodekey collateraltxid collateraloutputnum`
+`mn01 ipaddressofvps:40000 masternodekey collateraltxid collateraloutputnum`
 
 as example:
 
