@@ -46,7 +46,6 @@ mkdir .bidx
 echo listen=1 >> .bidx/bidx.conf
 echo server=1 >> .bidx/bidx.conf
 echo daemon=1 >> .bidx/bidx.conf
-echo staking=1 >> .bidx/bidx.conf
 echo rpcuser=testuser >> .bidx/bidx.conf
 echo rpcpassword=testpassword >> .bidx/bidx.conf
 echo rpcallowip=127.0.0.1 >> .bidx/bidx.conf
