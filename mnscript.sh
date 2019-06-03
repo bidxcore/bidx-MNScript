@@ -37,9 +37,13 @@ primaryip="$(ip route get 1 | awk '{print $NF;exit}')"
 echo "This is where you paste the masternode privkey (output from 'masternode genkey') and then press enter"
 read -e masternodeprivkey
 
-# write our masternode's .bidx/bidx.conf
+# write our masternode's .bidx/bidx.confecho
+echo "Creating the BIDX datadir and bidx.conf file."
+cd $HOME
+
 mkdir .bidx
-echo listen=1 > .bidx/bidx.conf
+
+echo listen=1 >> .bidx/bidx.conf
 echo server=1 >> .bidx/bidx.conf
 echo daemon=1 >> .bidx/bidx.conf
 echo staking=1 >> .bidx/bidx.conf
@@ -53,6 +57,7 @@ echo masternodeprivkey=$masternodeprivkey >> .bidx/bidx.conf
 echo bind=$primaryip >> .bidx/bidx.conf
 echo externalip=$primaryip >> .bidx/bidx.conf
 echo masternodeaddr=$primaryip:40000 >> .bidx/bidx.conf
+echo addnode=155.138.245.86:40000 >> .bidx/bidx.conf
 
 # sleep because sleeping is good
 sleep 1
