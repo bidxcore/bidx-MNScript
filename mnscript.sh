@@ -42,7 +42,7 @@ echo "Creating the BIDX datadir and bidx.conf file."
 
 mkdir .bidx
 
-echo staking=0 > .bufx/bidx.conf
+echo staking=0 > .bidx/bidx.conf
 echo listen=1 >> .bidx/bidx.conf
 echo server=1 >> .bidx/bidx.conf
 echo daemon=1 >> .bidx/bidx.conf
