@@ -39,18 +39,18 @@ read -e masternodeprivkey
 
 # write our masternode's .bidx/bidx.confecho
 echo "Creating the BIDX datadir and bidx.conf file."
-cd $HOME
 
 mkdir .bidx
 
+echo staking=0 > .bufx/bidx.conf
 echo listen=1 >> .bidx/bidx.conf
 echo server=1 >> .bidx/bidx.conf
 echo daemon=1 >> .bidx/bidx.conf
-echo rpcuser=testuser >> .bidx/bidx.conf
-echo rpcpassword=testpassword >> .bidx/bidx.conf
+echo rpcuser=bidxuser >> .bidx/bidx.conf
+echo rpcpassword=bidxpassword >> .bidx/bidx.conf
 echo rpcallowip=127.0.0.1 >> .bidx/bidx.conf
 echo rpcbind=127.0.0.1 >> .bidx/bidx.conf
-echo maxconnections=24 >> .bidx/bidx.conf
+echo maxconnections=224 >> .bidx/bidx.conf
 echo masternode=1 >> .bidx/bidx.conf
 echo masternodeprivkey=$masternodeprivkey >> .bidx/bidx.conf
 echo bind=$primaryip >> .bidx/bidx.conf
