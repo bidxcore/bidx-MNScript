@@ -183,7 +183,7 @@ rm -rf /usr/local/bin/bidx*
 rm -rf bidx-linux64*
 wget https://github.com/bidxcore/releases/blob/master/linux/bidx-linux64.tgz
 tar bidx-linux64.tgz
-cd bidx-linux64
+cd bidx-linux64/bidx-linux64
 sudo chmod -R 755 bidx-cli
 sudo chmod -R 755 bidxd
 cp -p -r bidxd /usr/local/bin
