@@ -1,10 +1,13 @@
 #!/bin/bash
+rm -rf bidx-linux64.tgz
 wget https://github.com/bidxcore/releases/raw/master/linux/bidx-linux64.tgz
+rm -rf bidx-linux64
 tar xvf bidx-linux64.tgz
 cp -f bidx-linux64/* /usr/local/bin
+rm -f bidx-linux64.tgz
 
 # find our public ip
-primaryip="$(ip route get 1 | awk '{print $NF;exit}')"
+primaryip="$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | head -n 1)"
 echo "paste the masternode privkey (output from 'masternode genkey') and press enter"
 read -e masternodeprivkey
 
