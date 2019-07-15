@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# to run this script:  wget https://raw.githubusercontent.com/bidxcore/bidx-MNScript/master/simplenode.sh && bash simplenode.sh
+
 # checks if we have a swapfile which allows an operating system to use hard disk space to simulate extra memory
 
 memory="$(free | grep Swap | tr -s ' ' | cut -d ' ' -f 4)"
