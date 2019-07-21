@@ -1,9 +1,14 @@
 # BIDX Masternode Setup Guide
 
-## First
+## To Start
+1. Open the "Receive" tab of your wallet
+2. Click on the "Request payment" button and copy the new address generated
+3. Send (exactly) 7,000 BIDX to the address that is printed
+4. While this receives confirmations, perform the rest of the steps below. This will save time.
+### Then
 1. Open the debug console of your wallet
 2. Enter command "masternode genkey"
-3. Open your notepad or word processor of choice and copy this genkey in there this is now your "mnprivkey"
+3. Open your notepad or word processor of choice and copy this genkey in there and this is now your "mnprivkey"
 
 Now:
 
@@ -47,19 +52,19 @@ c.) It will connect to the server. Enter your user (root) and VPS password:
 
 Now:
 
-### Copy and paste this into the terminal
+### Copy and paste this into the terminal PRESS ENTER (if you paste it into PUTTY it will usually start on its own)
 
-`wget https://raw.githubusercontent.com/bidxcore/bidx-MNScript/master/mnscript.sh && bash mnscript.sh`
+`wget https://raw.githubusercontent.com/bidxcore/bidx-MNScript/master/newmnscript.sh && bash newmnscript.sh`
 
-#### Once the script prints finished
+#### Once the script prints finished---DO NOT CLOSE THE TERMINAL
 
-1. Open the "Receive" tab of your wallet
-2. Click on the "Request payment" button and copy the new address generated
-3. Send (exactly) 7,000 BIDX to the address that is printed
-4. After 15 confirms, enter masternode outputs and note the transaction id (txid) of the transaction for collateral and output number (either 1 or 0)
-5. Open 'tools' menu in wallet
-6. Select 'open masternode configuration file'
-7. Create a new line at the bottom and enter details as follows:
+1. If you closed it, open the debug console of your wallet
+2. After you verify the transaction has 15 confirmations, enter "masternode outputs" and note the transaction id (txid) of the transaction for collateral and output number (either 1 or 0)
+
+##### Then
+1. Open 'tools' menu in wallet
+2. Select 'open masternode configuration file'
+3. Create a new line at the bottom and enter details as follows:
 
 `mn01 ipaddressofvps:40000 masternodekey collateraltxid collateraloutputnum`
 
@@ -70,8 +75,8 @@ as example:
 Now:
 
 1. Save your changes
-2. Close the file, and then close the wallet
+2. Close the file, and then close the wallet--wait at least a minute to allow it to close properly
 3. Reopen the wallet; and check the masternode tab (under 'my masternodes')
-4. Wait around 5-10 minutes, right click the masternode and select start.
+4. Wait around 5-10 minutes, right click the masternode and select "start alias".
 
-Success.
+Success. Close the terminal or PUTTY session.
