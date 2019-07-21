@@ -1,4 +1,4 @@
-# BIDX Masternode Setup Guide
+# BIDX Masternode Setup Guide--THIS CAN TAKE SOME TIME
 
 ## To Start
 1. Open the "Receive" tab of your wallet
@@ -80,3 +80,5 @@ Now:
 4. Wait around 5-10 minutes, right click the masternode and select "start alias".
 
 Success. Close the terminal or PUTTY session.
+
+WAIT FOR THE NETWORK TO ACCEPT THE MASTERNODE, THIS CAN TAKE SOME TIME.
