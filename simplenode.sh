@@ -36,7 +36,7 @@ cd
 
 # sleep because sleeping is good
 sleep 1
-bidxd
+bidxd -daemon -listen
 
 # finished
 echo Finished
